@@ -1,0 +1,99 @@
+
+section article {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  background-color: #EEEEEE;
+  margin: 2em;
+}
+
+
+section article header { /*header*/
+  background-color: #F3F3F3;
+  border-radius: 8px 8px 0 0;
+  width:100%;
+  position: relative;
+  display: table;
+  opacity: 0.7;
+}
+
+
+
+section article header div { /*profile*/
+  display: table-cell;
+  height: 60px;
+  padding: 10px 0 10px 10px;
+  width: 60px;
+  vertical-align: middle;
+}
+
+
+section article header div img { /*profilePic*/
+  border-radius: 8px;
+  height: 60px;
+  width: 60px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.username {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 0 0 20px 12px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+section article header span { /*@tweet*/
+  display: table-cell;
+  vertical-align: middle;
+  width: 1em;
+  padding: 0 10px 20px 0;
+}
+
+
+.tweetbody {
+  height: 110px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  display: table;
+  vertical-align: middle;
+}
+
+
+.tweetbody p {
+  font-size: 1.2em;
+  font-weight: lighter;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+section article footer {
+  border-top: 1px solid #eeeeee;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  height: 35px;
+  width: 100%;
+  display: table;
+}
+
+
+section article footer span{ /*postDate*/
+  font-size: 0.7em;
+  font-weight: lighter;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 0 0 10px;
+}
+
+
+section article footer div { /*UIoptions*/
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+  width: 1em;
+  opacity: 0;
+}
