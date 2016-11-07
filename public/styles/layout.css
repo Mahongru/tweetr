@@ -24,12 +24,13 @@ body {
 
 body main {
   /*border: 2px solid red;*/
-  width: 450px;
-  height: 1000px;
+  padding-top: 100px;
+  width: 600px;
+  height: 1000%;
   background-color: white;
   margin: 0 auto;
   /*position: center;*/
-  overflow: auto; /*This helped fix the overflow problem*/
+
 
 }
 

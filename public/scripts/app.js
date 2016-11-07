@@ -32,6 +32,34 @@ $(function () {
   }
 
   function createTweetElement(tweet) {
+    /*
+    //For future reference
+
+    var article = $("<article>").addClass('tweet');
+    var header = $("<header>").addClass('header');
+
+    header.append($('<img src="' + tweet.user.avatars.small + '">'));
+    header.append($('<p>').addClass('username'));
+
+    article.append(header);
+
+    $(".tweetbox").append(article);
+
+    <img src="icon-heart.jpg" />
+    <img src="icon-flag.jpg" />
+    <img src="icon-trash.jpg" />
+
+    header.append($(<img src="icon-heart.jpg">))
+    header.append($(<img src="icon-flag.jpg">))
+    header.append($(<img src="icon-trash.jpg">))
+    header.append($(<img src="icon-trash.jpg">))
+
+    ["icon-heart", "icon-flag", "icon-trash"].forEach(function(icon) {
+      header.append($('<img src="' + icon + '">'));
+    });
+    */
+
+
     var html = $("<article class='tweet'>"
        +
             "<header id='header'>"
@@ -106,7 +134,7 @@ $(function () {
       loadTweets(data);
     },
      error: function (data) {
-       $('.counter').text('null')
+       $('.counter').text('text field is empty')
        $('.counter').css('color', 'tomato')
      }
    })

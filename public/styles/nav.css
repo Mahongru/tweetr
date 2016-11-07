@@ -1,17 +1,18 @@
 #nav-bar {
   background-color: #00a087;
-  position: relative;
+  position: fixed;
   color: #e8fdff;
   width: 100%;
   padding: 0px 2em;
   height: 80px;
-  float: top;
   display: table;
+  vertical-align: top;
 }
 
 #nav-bar .logo {
   height: 80px;
   width: 80px;
+  margin: 0px;
 }
 
 

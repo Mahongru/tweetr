@@ -30,8 +30,12 @@ module.exports = function(db) {
       },
       created_at: Date.now()
     };
-    db.saveTweet(tweet);
-    return res.send();
+    db.saveTweet(tweet, (err, result) => {
+      if(err) {
+
+      }
+      res.send();
+    });
   });
 
   return tweets;
@@ -89,5 +93,5 @@ module.exports = function(db) {
 //   });
 //
 //   return tweets;
-// 
+//
 // }

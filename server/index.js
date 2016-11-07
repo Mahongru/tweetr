@@ -17,7 +17,7 @@ app.use(express.static("public"));
 // a callback is passed inside our function, it is waiting for 'dbInstance'
 // which is fetched form db. then uses the results and passes it to tweets API.
 // so connect > callback > wait for dbInstance > gets dbInstance >
-// the function runs > calls tweetsAPI > passes dbInstance > 
+// the function runs > calls tweetsAPI > passes dbInstance >
 db.connect((dbInstance) => {
   app.use('/tweets', requireTweetsAPI(dbInstance));
 
